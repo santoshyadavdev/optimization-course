@@ -7,7 +7,6 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
-import { SharedModule } from '../shared/shared.module';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
@@ -15,8 +14,11 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
-    SharedModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    MatGridListModule,
+    MatCardModule,
+    MatMenuModule,
+    MatIconModule,
   ]
 })
 export class DashboardModule { }

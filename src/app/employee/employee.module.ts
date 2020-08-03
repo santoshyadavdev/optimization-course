@@ -4,7 +4,12 @@ import { CommonModule } from '@angular/common';
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeeComponent } from './employee.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { SharedModule } from '../shared/shared.module';
+import { MatCardModule } from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatRadioModule } from '@angular/material/radio';
+import { MatOptionModule } from '@angular/material/core';
+import { MatSelectModule } from '@angular/material/select';
 
 
 @NgModule({
@@ -13,7 +18,12 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     EmployeeRoutingModule,
     ReactiveFormsModule,
-    SharedModule
+    MatInputModule,
+    MatOptionModule,
+    MatSelectModule,
+    MatRadioModule,
+    MatCardModule,
+    MatFormFieldModule
   ]
 })
 export class EmployeeModule { }
