@@ -6,9 +6,18 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 const routes: Routes = [
-  { path: 'employee', component: EmployeeComponent },
-  { path: 'department', component: DepartmentComponent },
-  { path: 'dashboard', component: DashboardComponent },
+  {
+    path: 'employee',
+    loadChildren: () => import('./employee/employee.module').then(m => m.EmployeeModule)
+  },
+  {
+    path: 'department',
+    loadChildren: () => import('./department/department.module').then(m => m.DepartmentModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./dashboard/dashboard.module').then(m => m.DashboardModule)
+  },
   { path: '', redirectTo: 'employee', pathMatch: 'full' }
 ];
 

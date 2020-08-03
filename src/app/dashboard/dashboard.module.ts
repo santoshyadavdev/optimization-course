@@ -8,14 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import { SharedModule } from '../shared/shared.module';
-
+import { DashboardRoutingModule } from './dashboard-routing.module';
 
 
 @NgModule({
   declarations: [DashboardComponent],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    DashboardRoutingModule
   ]
 })
 export class DashboardModule { }
