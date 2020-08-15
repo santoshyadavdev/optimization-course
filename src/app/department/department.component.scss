@@ -1,5 +1,8 @@
 @import '../themes/scss-variables';
 
-.full-width-table {
-  width: $full-width
+.app-department {
+  .full-width-table {
+    width: $full-width
+  }
 }
+
