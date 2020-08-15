@@ -37,7 +37,8 @@ import { MatMenuModule } from '@angular/material/menu';
     MatCardModule,
     MatIconModule,
     MatButtonModule,
-    LayoutModule
+    LayoutModule,
+    MatGridListModule
   ],
   exports: [CommonModule,
     MatInputModule,
