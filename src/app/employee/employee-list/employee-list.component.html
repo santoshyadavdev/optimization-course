@@ -1,0 +1,31 @@
+
+<button mat-raised-button color="primary" (click)="getEmployee()">
+  Get Employee
+</button>
+
+<table class="full-width">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>State</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of empList">
+      <td>
+        {{emp.firstName}} {{emp.lastName}}
+      </td>
+      <td>
+        {{emp.address}} {{emp.address2}}
+      </td>
+      <td>
+        {{emp.city}}
+      </td>
+      <td>
+        {{emp.state}}
+      </td>
+    </tr>
+  </tbody>
+</table>

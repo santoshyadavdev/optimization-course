@@ -23,6 +23,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { SharedModule } from './shared/shared.module';
+import { EmployeeListComponent } from './employee/employee-list/employee-list.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { SharedModule } from './shared/shared.module';
     EmployeeComponent,
     DepartmentComponent,
     MainNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    EmployeeListComponent
   ],
   imports: [
     BrowserModule,

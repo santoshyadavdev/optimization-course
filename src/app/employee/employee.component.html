@@ -78,7 +78,8 @@
       <div class="row">
         <div class="col">
           <mat-form-field class="full-width">
-            <input matInput #postalCode maxlength="5" placeholder="Postal Code" type="number" formControlName="postalCode">
+            <input matInput #postalCode maxlength="5" placeholder="Postal Code" type="number"
+              formControlName="postalCode">
             <mat-hint align="end">{{postalCode.value.length}} / 5</mat-hint>
           </mat-form-field>
         </div>
@@ -98,3 +99,7 @@
     </mat-card-actions>
   </mat-card>
 </form>
+
+<mat-divider></mat-divider>
+
+<app-employee-list></app-employee-list>
