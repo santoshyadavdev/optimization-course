@@ -7,7 +7,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   {
     path: 'employee',
-    loadChildren: () => import('./employee/employee.module').then(m => m.EmployeeModule)
+    loadChildren: () => import('app/employee/employee.module').then(m => m.EmployeeModule)
   },
   { path: 'department', component: DepartmentComponent },
   { path: 'dashboard', component: DashboardComponent },
