@@ -13,7 +13,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let emp of empList">
+    <tr *ngFor="let emp of empList; trackBy: trackByName">
       <td>
         {{emp.firstName}} {{emp.lastName}}
       </td>

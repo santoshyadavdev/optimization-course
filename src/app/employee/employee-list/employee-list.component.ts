@@ -21,8 +21,8 @@ export class EmployeeListComponent implements OnInit {
     this.empList = this.empService.getEmployeeList();
   }
 
-  // trackByName(i: number, emp: Employee) {
-  //   return emp.firstName;
-  // }
+  trackByName(i: number, emp: Employee) {
+    return emp.firstName;
+  }
 
 }
