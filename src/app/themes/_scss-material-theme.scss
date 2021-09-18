@@ -1,19 +1,20 @@
+@use '~@angular/material' as mat;
 @import '~@angular/material/theming';
 @import 'scss-material-color-palettes';
 
-$scss-typography: mat-typography-config(
+$scss-typography: mat.define-typography-config(
   $font-family: '"Arial", sans-serif',
-  $body-1: mat-typography-level(14px, 1.25em, 400)
+  $body-1: mat.define-typography-level(14px, 1.25em, 400)
 );
-@include mat-core($scss-typography);
+@include mat.core($scss-typography);
 
 // configure colors
-$scss-app-primary: mat-palette($scss-mat-primary, 700, 200, 900);
-$scss-app-accent: mat-palette($scss-mat-accent, 700, 400, 800);
-$scss-app-warn: mat-palette($scss-mat-warn);
+$scss-app-primary: mat.define-palette($scss-mat-primary, 700, 200, 900);
+$scss-app-accent: mat.define-palette($scss-mat-accent, 700, 400, 800);
+$scss-app-warn: mat.define-palette($scss-mat-warn);
 
 // calculate colors
-$scss-app-theme: mat-light-theme(
+$scss-app-theme: mat.define-light-theme(
     $scss-app-primary,
     $scss-app-accent,
     $scss-app-warn
@@ -28,4 +29,4 @@ $mat-box-shadow:
   0 1px 3px 0 rgba(0, 0, 0, .12);
 
 // apply configured colors
-@include angular-material-theme($scss-app-theme);
+@include mat.all-component-themes($scss-app-theme);
